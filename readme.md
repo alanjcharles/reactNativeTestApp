@@ -14,7 +14,7 @@
     - Go down to the bottom of the file, just below `export default App`
     - cd aweAdd `analytics.setup('<YOUR WRITE KEY>', {})`
     
-** Additional Setup Information**    
+**Additional Setup Information**    
 - Open Xcode
 - Go to File→Open
     - Select the directory of reactNativeTestApp/iOS and open reactNativeTestApp.xcworkspace
