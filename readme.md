@@ -10,7 +10,6 @@
     - `cd ..`
 - Open the `reactNativeTestApp` directory your code editor.
 - In your code editor, open `App.js`
-    - `import analytics from '@segment/analytics-react-native'`
     - Go down to the bottom of the file, just below `export default App`
     - Add your write-key `analytics.setup('<YOUR WRITE KEY>', {})`
     
