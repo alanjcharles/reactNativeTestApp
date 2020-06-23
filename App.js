@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   }
 });
 
-analytics.setup('9VFtsZT76zNcSPgJViROIgiTssjco8zW', {
+analytics.setup('<Write Key>', {
   using: [firebase]
   });
 
