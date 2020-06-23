@@ -12,7 +12,7 @@
 - In your code editor, open `App.js`
     - `import analytics from '@segment/analytics-react-native'`
     - Go down to the bottom of the file, just below `export default App`
-    - cd aweAdd `analytics.setup('<YOUR WRITE KEY>', {})`
+    - Add your write-key `analytics.setup('<YOUR WRITE KEY>', {})`
     
 **Additional Setup Information**    
 - Open Xcode
