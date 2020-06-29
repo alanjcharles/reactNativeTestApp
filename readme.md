@@ -29,14 +29,14 @@
 - You should now have a virtual android device running
 - Open a terminal window in the root of this project
 - Run the following command: `react-native start`
-- Open a new terminal tab or window and run the command: `react-native run android`
+- Open a new terminal tab or window and run the command: `react-native run-android`
     - If you see errors at this stage like the following:
     ```
     error Failed to start the app.
     Error: spawnSync adb ENOENT
     ```
-    This can soleve the issue: https://stackoverflow.com/a/38847005
-    - My bash profile looks like the following:
+    This can solve the issue: https://stackoverflow.com/a/38847005
+    - For reference my bash profile looks like the following:
     ```
     export ANDROID_HOME=$HOME/Library/Android/sdk
     export PATH=$PATH:$ANDROID_HOME/emulator
