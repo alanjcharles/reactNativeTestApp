@@ -47,7 +47,7 @@ export default class App extends React.Component{
 
 onPress= (val) => {
   this.setState({event: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
   render(){
     let event = this.state.event
@@ -170,7 +170,8 @@ const styles = StyleSheet.create({
   }
 });
 
-analytics.setup('<Write Key>', {
+analytics.setup('<WRITE KEY>', {
+  debug: true,
   using: [firebase]
   });
 

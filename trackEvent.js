@@ -41,48 +41,82 @@ export default class TrackEvent extends React.Component{
       eventName:'Event Name',
       property: 'Property',
       value: 'Value',
-      props: {}
+      props: { property: ['null']}
     }
   }
 
 
 onChangeEventName = (val) => {
   this.setState({eventName: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 onChangeProperty = (val) => {
   this.setState({property: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 onChangeValue = (val) => {
   this.setState({value: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 
 onSubmitEditingEventName = (val) => {
   this.setState({eventName: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 onSubmitEditingProperty = (val) => {
   this.setState({property: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 onSubmitEditingValue = (val) => {
   this.setState({value: val})
-  console.log(this.state)
+  // console.log(this.state)
 }
 
 onSendEvent = async() => {
   let name = this.state.eventName
   let properties = this.state.props
 
-  await analytics.track(name, properties)
+  await analytics.track(name, properties, {context: {ip:'0.0.0'}});
   await analytics.flush()
+  analytics.identify('14141414', {isHungry:false}, {context:{ip:'0.0.0'}})
+  analytics.track('Order Completed', {
+    "affiliation": "Google Store",
+    "checkout_id": "fksdjfsdjfisjf9sdfjsd9f",
+    "coupon": "hasbros",
+    "currency": "USD",
+    "discount": 2.5,
+    "order_id": "50314b8e9bcf000000000000",
+    "products": [
+       {
+        "category": "Games",
+        "image_url": "https:///www.example.com/product/path.jpg",
+        "name": "Monopoly: 3rd Edition",
+        "price": 19,
+        "product_id": "507f1f77bcf86cd799439011",
+        "quantity": 1,
+        "sku": "45790-32",
+        "url": "https://www.example.com/product/path"       
+     },
+      {
+       "category": "Games",
+       "name": "Uno Card Game",
+       "price": 3,
+       "product_id": "505bd76785ebb509fc183733",
+       "quantity": 2,
+       "sku": "46493-32"       
+     }
+     ],
+     "revenue": 25,
+     "shipping": 3,
+     "subtotal": 22.5,
+     "tax": 2,
+     "total": 27.5   
+  })
 }
 
 onPress = async() => {
@@ -90,7 +124,7 @@ onPress = async() => {
   const value = this.state.value
   let propsObj =  {...this.state.props, [propertyName]:value}
   await this.setState({props: propsObj})
-  console.log(this.state)
+  // console.log(this.state)
   await this.setState({property: 'Property', value:'Value'})
 }
 
