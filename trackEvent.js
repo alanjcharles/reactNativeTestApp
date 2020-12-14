@@ -80,43 +80,12 @@ onSubmitEditingValue = (val) => {
 onSendEvent = async() => {
   let name = this.state.eventName
   let properties = this.state.props
-
+  let segIDFA= await analytics.setIDFA("123");
+  console.log('idfa:', segIDFA)
   await analytics.track(name, properties, {context: {ip:'0.0.0'}});
   await analytics.flush()
-  analytics.identify('14141414', {isHungry:false}, {context:{ip:'0.0.0'}})
-  analytics.track('Order Completed', {
-    "affiliation": "Google Store",
-    "checkout_id": "fksdjfsdjfisjf9sdfjsd9f",
-    "coupon": "hasbros",
-    "currency": "USD",
-    "discount": 2.5,
-    "order_id": "50314b8e9bcf000000000000",
-    "products": [
-       {
-        "category": "Games",
-        "image_url": "https:///www.example.com/product/path.jpg",
-        "name": "Monopoly: 3rd Edition",
-        "price": 19,
-        "product_id": "507f1f77bcf86cd799439011",
-        "quantity": 1,
-        "sku": "45790-32",
-        "url": "https://www.example.com/product/path"       
-     },
-      {
-       "category": "Games",
-       "name": "Uno Card Game",
-       "price": 3,
-       "product_id": "505bd76785ebb509fc183733",
-       "quantity": 2,
-       "sku": "46493-32"       
-     }
-     ],
-     "revenue": 25,
-     "shipping": 3,
-     "subtotal": 22.5,
-     "tax": 2,
-     "total": 27.5   
-  })
+  await analytics.identify('14141414', {isHungry:false}, {context:{ip:'0.0.0'}})
+  
 }
 
 onPress = async() => {
