@@ -78,16 +78,17 @@ onSendEvent = async() => {
   let userId = this.state.userId
   let traits = this.state.traits
 
-  await analytics.identify(userId, traits)
-  await analytics.flush()
-}
+  await analytics.identify('brandon', null, { anonymousId: '0123456789' });
+  // await console.log('user:', analytics.getAnonymousId());
+  await analytics.flush();
+};
 
 onPress = async() => {
   const traitName = this.state.trait
   const value = this.state.value
   let traitsObj =  {...this.state.traits, [traitName]:value}
   await this.setState({traits: traitsObj})
-  console.log(this.state)
+  // console.log(this.state)
   await this.setState({trait: 'Trait', value:'Value'})
 }
 

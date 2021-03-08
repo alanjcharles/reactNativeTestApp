@@ -35,6 +35,7 @@ import ScreenEvent from './screenEvent.js'
 
 import analytics from '@segment/analytics-react-native';
 import firebase from '@segment/analytics-react-native-firebase';
+import amplitude from '@segment/analytics-react-native-amplitude';
 
 export default class App extends React.Component{
   constructor(props){
@@ -170,9 +171,9 @@ const styles = StyleSheet.create({
   }
 });
 
-analytics.setup('< write-key >', {
-  debug: true,
-  using: [firebase]
+analytics.setup('9VFtsZT76zNcSPgJViROIgiTssjco8zW', {
+  using: [firebase, amplitude],
+  trackAdvertising: true
   });
 
 analytics.screen('first screen');
