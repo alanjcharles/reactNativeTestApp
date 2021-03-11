@@ -30,7 +30,6 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 
 import analytics from '@segment/analytics-react-native';
-import firebase from '@segment/analytics-react-native-firebase';
 
 export default class IdentifyEvent extends React.Component{
   constructor(props){
@@ -78,7 +77,7 @@ onSendEvent = async() => {
   let userId = this.state.userId
   let traits = this.state.traits
 
-  await analytics.identify('brandon', null, { anonymousId: '0123456789' });
+  await analytics.identify('userId');
   // await console.log('user:', analytics.getAnonymousId());
   await analytics.flush();
 };
