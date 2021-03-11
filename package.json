@@ -19,6 +19,7 @@
     "@segment/analytics-react-native-firebase": "^1.1.1-beta.3",
     "all": "^0.0.0",
     "minimist": "^0.2.1",
+    "node-fetch": "^2.6.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-cli": "^2.0.1",
