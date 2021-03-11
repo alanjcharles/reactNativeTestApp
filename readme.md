@@ -45,3 +45,7 @@
     export PATH=$PATH:$ANDROID_HOME/platform-tools
     ```
 - The app should now be launched in Android
+
+
+
+
