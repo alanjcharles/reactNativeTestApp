@@ -36,6 +36,7 @@ import ScreenEvent from './screenEvent.js'
 import analytics from '@segment/analytics-react-native';
 import firebase from '@segment/analytics-react-native-firebase';
 import amplitude from '@segment/analytics-react-native-amplitude';
+import appsflyer from '@segment/analytics-react-native-appsflyer';
 
 export default class App extends React.Component{
   constructor(props){
@@ -171,9 +172,12 @@ const styles = StyleSheet.create({
   }
 });
 
-analytics.setup('9VFtsZT76zNcSPgJViROIgiTssjco8zW', {
-  using: [firebase, amplitude],
+analytics.setup('jsncpKk55wcgYULuqwwQy9nKBGbN4IYu', {
+  debug: true, 
+  flushAt: 1,
+  using: [firebase, amplitude, appsflyer],
   trackAdvertising: true
   });
 
 analytics.screen('first screen');
+

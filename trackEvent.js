@@ -80,40 +80,67 @@ onSubmitEditingValue = (val) => {
 onSendEvent = async() => {
   let name = this.state.eventName
   let properties = this.state.props
-  await analytics.track(name, properties, {context: {ip:'0.0.0'}});
-  analytics.track('Order Completed', {
-    checkout_id: 'fksdjfsdjfisjf9sdfjsd9f',
-    order_id: '50314b8e9bcf000000000000',
-    affiliation: 'Google Store',
-    total: 27.50,
-    subtotal: 22.50,
-    revenue: 25.00,
-    shipping: 3,
-    tax: 2,
-    discount: 2.5,
-    coupon: 'hasbros',
-    currency: 'USD',
-    products: [
-      {
-        product_id: '507f1f77bcf86cd799439011',
-        sku: '45790-32',
-        name: 'Monopoly: 3rd Edition',
-        price: 19,
-        quantity: 1,
-        category: 'Games',
-        url: 'https://www.example.com/product/path',
-        image_url: 'https:///www.example.com/product/path.jpg'
-      },
-      {
-        product_id: '505bd76785ebb509fc183733',
-        sku: '46493-32',
-        name: 'Uno Card Game',
-        price: 3,
-        quantity: 2,
-        category: 'Games'
-      }
-    ]
-  });
+  // await analytics.track(name, properties, {context: {ip:'0.0.0'}});
+  await analytics.track('Order Completed', {
+      "base_price": "",
+      "cart_id": "myTruck_41450-00097",
+      "checkout_id": "200017685",
+      "currency": "USD",
+      "deals": [],
+      "delivery_date": "03/03/2021",
+      "discount": 20.2,
+      "is_suggested": "",
+      "order_id": "200017685",
+      "payment_method": "CREDIT",
+      "points_earned": "",
+      "points_redeemed": "",
+      "products": [
+        {
+          "base_price": null,
+          "brand": "Bottle",
+          "category": "Container",
+          "currency": "USD",
+          "daily_deal_redeemed": null,
+          "daily_limit": null,
+          "deal_description": null,
+          "deal_id": null,
+          "deal_type": null,
+          "image_url": "https://images.vtinfo.com/b_white/companies/anb/item-catalog/items/00796030814914_9878927_2q3x7e7k.png",
+          "is_promotion": null,
+          "is_redemption": null,
+          "is_reorder": 0,
+          "is_suggested": null,
+          "monthly_deal_redeemed": null,
+          "monthly_limit": null,
+          "name": "Kona Hanalei Island IPA 4x 6 Pack (12 oz Bottles)",
+          "original_price": 0,
+          "original_quantity": null,
+          "packaging": "12oz ",
+          "points_earned": null,
+          "points_redeemed": null,
+          "position": 0,
+          "price": 29.5,
+          "product_id": "004967-C-00097",
+          "promotion_type": null,
+          "quantity": 1,
+          "recommendation_id": "41450-00097-20210302T194248",
+          "recommendation_type": "ERP_REGULARS",
+          "recommended_quantity": 1,
+          "sku": "004967-C-00097",
+          "sku_type": "",
+          "url": null,
+          "variant": "",
+          "volume_hectoliters": null
+        },
+      ],
+      "promotion_type": "",
+      "referrer": "Submit Order",
+      "revenue": 746.66,
+      "shipping": 0,
+      "tax": 0,
+      "total": 746.66,
+      "volume_hectoliters": ""
+    });
     await analytics.flush()
 }
 
