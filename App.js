@@ -173,11 +173,10 @@ const styles = StyleSheet.create({
 });
 
 analytics.setup('<write-key>', {
-  debug: true, 
+  debug: true,
   flushAt: 1,
   // using: [firebase, amplitude, appsflyer],
   trackAdvertising: true
   });
 
 analytics.screen('first screen');
-
