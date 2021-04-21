@@ -85,6 +85,7 @@ target 'reactNativeTest' do
   end
 
   use_native_modules!
+  use_modular_headers!
 
   # Enables Flipper.
   #
