@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
 analytics.setup('jsncpKk55wcgYULuqwwQy9nKBGbN4IYu', {
   debug: true,
   flushAt: 1,
-  // using: [firebase, amplitude, appsflyer],
+  using: [firebase, amplitude, appsflyer],
   trackAdvertising: true
   });
 
