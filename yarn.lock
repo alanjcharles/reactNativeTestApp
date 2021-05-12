@@ -1445,6 +1445,7 @@
   dependencies:
     nanoid "^3.1.15"
 
+
 "@segment/analytics-react-native-amplitude@^1.4.4":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-amplitude/-/analytics-react-native-amplitude-1.4.4.tgz#beb370ac78782df27167de5c082bb1dffde7824a"
@@ -1459,7 +1460,7 @@
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-firebase/-/analytics-react-native-firebase-1.4.4.tgz#72d3101d13cc54c5274c00d7e574761ea4d3740d"
   integrity sha512-jLAg58Fsyh4zgVdwPrgyxPi+dCNMkVA7WOkzYhh/Uypc0G9/He4tXqLj9v1jdqtr5QdadBzQVGNMPRyuNLUvUg==
-
+  
 "@segment/analytics-react-native@1.4.4":
   version "1.4.4"
   resolved "https://registry.npmjs.org/@segment/analytics-react-native/-/analytics-react-native-1.4.4.tgz"

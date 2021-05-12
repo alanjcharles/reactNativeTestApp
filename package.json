@@ -18,7 +18,6 @@
     "@segment/analytics-react-native":"1.4.4",
     "@segment/analytics-react-native-amplitude": "^1.4.4",
     "@segment/analytics-react-native-appsflyer": "^1.4.4",
-    "@segment/analytics-react-native-firebase": "^1.4.4",
     "deepmerge": "4.2.2",
     "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
