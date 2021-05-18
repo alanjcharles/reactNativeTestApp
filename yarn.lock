@@ -1445,26 +1445,10 @@
   dependencies:
     nanoid "^3.1.15"
 
-
-"@segment/analytics-react-native-amplitude@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-amplitude/-/analytics-react-native-amplitude-1.4.4.tgz#beb370ac78782df27167de5c082bb1dffde7824a"
-  integrity sha512-U/qu8jTfOr0AfuYvnHA9fyi5aZyN87Y26RvcxIa7AlWzNf1rcMkKjDmJ6ezR5d0qUCmI4KNwhrkKFk+laGrTgw==
-
-"@segment/analytics-react-native-appsflyer@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-appsflyer/-/analytics-react-native-appsflyer-1.4.4.tgz#0e120baa5f11084058854e6a99ac86767a8664fc"
-  integrity sha512-lj5KjgI5e/yA7Fl/w/JhX5MAUOPSozMst0S69SrR7e/QPEwQewC7aWV5CEi5m6Co1zns6jC2h2GOJz+Z7NAMAA==
-
-"@segment/analytics-react-native-firebase@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-firebase/-/analytics-react-native-firebase-1.4.4.tgz#72d3101d13cc54c5274c00d7e574761ea4d3740d"
-  integrity sha512-jLAg58Fsyh4zgVdwPrgyxPi+dCNMkVA7WOkzYhh/Uypc0G9/He4tXqLj9v1jdqtr5QdadBzQVGNMPRyuNLUvUg==
-  
-"@segment/analytics-react-native@1.4.4":
-  version "1.4.4"
-  resolved "https://registry.npmjs.org/@segment/analytics-react-native/-/analytics-react-native-1.4.4.tgz"
-  integrity sha512-zSgoGvw3VNqam0QoumOGiNr97ar3tutSwuMJPj2Da6mcJBVohMYHQcpShyufWfsiDeX8oMnu+UJx5eo+cxskrw==
+"@segment/analytics-react-native@1.4.5":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native/-/analytics-react-native-1.4.5.tgz#29c4af16d3cabc0f809ad483fe1a0deb05eec2c7"
+  integrity sha512-7owFLa41BA4VE/snO7U+QBfioGFbDpJL2Kw/BOhT3Q+8CPo+8NnjnS/UbS153+g2FwgTjiXK6pQZ2JEqrSlKBw==
 
 "@sideway/address@^4.1.0":
   version "4.1.1"
@@ -6035,10 +6019,10 @@ react-native-vector-icons@8.1.0:
     prop-types "^15.7.2"
     yargs "^16.1.1"
 
-react-native@0.64.0:
-  version "0.64.0"
-  resolved "https://registry.npmjs.org/react-native/-/react-native-0.64.0.tgz"
-  integrity sha512-8dhSHBthgGwAjU+OjqUEA49229ThPMQH7URH0u8L0xoQFCnZO2sZ9Wc6KcbxI0x9KSmjCMFFZqRe3w3QsRv64g==
+react-native@0.64.1:
+  version "0.64.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.1.tgz#cd38f5b47b085549686f34eb0c9dcd466f307635"
+  integrity sha512-jvSj+hNAfwvhaSmxd5KHJ5HidtG0pDXzoH6DaqNpU74g3CmAiA8vuk58B5yx/DYuffGq6PeMniAcwuh3Xp4biQ==
   dependencies:
     "@jest/create-cache-key-function" "^26.5.0"
     "@react-native-community/cli" "^5.0.1-alpha.0"
