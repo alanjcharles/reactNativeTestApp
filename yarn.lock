@@ -1445,26 +1445,20 @@
   dependencies:
     nanoid "^3.1.15"
 
+"@segment/analytics-react-native-amplitude@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-amplitude/-/analytics-react-native-amplitude-1.5.0.tgz#bb47b62fe2d62f6a47ffe9f968ec66c5cb1ae374"
+  integrity sha512-VFjo99ESVXABwdPlljl2TCIX2BwyFV5W0G64RLFwQxRtNSXHxzqRqsk58OI2pU7Hel/v/xdOxBlNPjoieGDnbw==
 
-"@segment/analytics-react-native-amplitude@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-amplitude/-/analytics-react-native-amplitude-1.4.4.tgz#beb370ac78782df27167de5c082bb1dffde7824a"
-  integrity sha512-U/qu8jTfOr0AfuYvnHA9fyi5aZyN87Y26RvcxIa7AlWzNf1rcMkKjDmJ6ezR5d0qUCmI4KNwhrkKFk+laGrTgw==
+"@segment/analytics-react-native-appsflyer@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-appsflyer/-/analytics-react-native-appsflyer-1.5.0.tgz#eacd3236215e199f985d836e341e9bba251b87a9"
+  integrity sha512-Wa8mD7tEcy1eTbDCoBCBsSD+fgjB+CIqJ24loUtIRSWRV3ztYJv325QzrD4ipdrTKg7WIfhiCvqceZeryp20Bw==
 
-"@segment/analytics-react-native-appsflyer@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-appsflyer/-/analytics-react-native-appsflyer-1.4.4.tgz#0e120baa5f11084058854e6a99ac86767a8664fc"
-  integrity sha512-lj5KjgI5e/yA7Fl/w/JhX5MAUOPSozMst0S69SrR7e/QPEwQewC7aWV5CEi5m6Co1zns6jC2h2GOJz+Z7NAMAA==
-
-"@segment/analytics-react-native-firebase@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-firebase/-/analytics-react-native-firebase-1.4.4.tgz#72d3101d13cc54c5274c00d7e574761ea4d3740d"
-  integrity sha512-jLAg58Fsyh4zgVdwPrgyxPi+dCNMkVA7WOkzYhh/Uypc0G9/He4tXqLj9v1jdqtr5QdadBzQVGNMPRyuNLUvUg==
-  
-"@segment/analytics-react-native@1.4.4":
-  version "1.4.4"
-  resolved "https://registry.npmjs.org/@segment/analytics-react-native/-/analytics-react-native-1.4.4.tgz"
-  integrity sha512-zSgoGvw3VNqam0QoumOGiNr97ar3tutSwuMJPj2Da6mcJBVohMYHQcpShyufWfsiDeX8oMnu+UJx5eo+cxskrw==
+"@segment/analytics-react-native@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native/-/analytics-react-native-1.5.0.tgz#14538b8c018202ef62daf8c5b3898312a057fbde"
+  integrity sha512-hW93MKffFfkqNec615jQUB5wJHb5KyIcZitIVF5L7cZZxBCM7rQjVdwV9Jdk3KGFwjnWGRkAjDD2DkJZYqz7KQ==
 
 "@sideway/address@^4.1.0":
   version "4.1.1"
