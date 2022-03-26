@@ -19,7 +19,7 @@
     "@segment/analytics-react-native-amplitude": "^1.5.0",
     "@segment/analytics-react-native-appsflyer": "^1.5.0",
     "deepmerge": "4.2.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-native": "0.64.0",
